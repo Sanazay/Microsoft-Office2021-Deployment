@@ -94,7 +94,4 @@ Office installation will begin automatically ✔
 ## 🎉 Done!
 
 Your Office LTSC Professional Plus 2021 is now installed successfully.
-
-If you want a **sample configuration.xml**, **folder structure**, or **ZIP package**, just ask!
-
 ```
