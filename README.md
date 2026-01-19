@@ -1,48 +1,74 @@
-# 📥 Microsoft Office 2021 Deployment (Free Volume License Version)
+# 📥 Microsoft Office 2021 Installation Guide for Students
 
-This repository provides a clean, step-by-step guide to download, configure, and install **Microsoft Office LTSC Professional Plus 2021** using the **Office Customization Tool (OCT)** and **Office Deployment Tool (ODT)**.
+This repository provides a **clear, simple, and beginner-friendly** guide to install  
+**Microsoft Office LTSC Professional Plus 2021** using official Microsoft tools.
+
+✔ Easy to understand  
+✔ Step-by-step  
+✔ Perfect for students & beginners  
 
 ---
 
-## 📝 1. Create Office Configuration (Office Customization Tool)
+## 🧰 Requirements
 
-Open the **Office Customization Tool** and configure the following:
+Before starting, make sure you have:
+- A Windows PC
+- Stable internet connection
+- Administrator access
+
+---
+
+## 🛠 Tools Used
+
+- **Office Customization Tool (OCT)** – to create the Office configuration file  
+- **Office Deployment Tool (ODT)** – to download and install Microsoft Office  
+
+---
+
+## 📝 Step 1: Create Office Configuration File
+
+1. Open **Office Customization Tool (OCT)** in your web browser.
+2. Configure the settings as follows:
 
 ### ✔ Architecture
-- 32-bit or 64-bit
+- Choose **64-bit** (Recommended) or **32-bit**
 
 ### ✔ Office Suite
 - **Office LTSC Professional Plus 2021 – Volume License**
 
-### ✔ Apps to Install
-- Access  
+### ✔ Applications to Install
 - Word  
 - Excel  
 - PowerPoint  
+- Access  
 
-### ✔ Languages
+### ✔ Language Settings
 - English (United Kingdom)  
 - English (United States)
 
-### ✔ Installation Option
-- Uninstall MSI versions → **OFF**
+### ✔ Installation Options
+- **Uninstall MSI versions** → OFF
 
-### ✔ Export
+### ✔ Export Settings
 - Select **Office Open XML formats**
 - Tick **I accept the terms in the license agreement**
-- Export → saves `configuration.xml`
+- Click **Export**
+
+📄 A file named **`configuration.xml`** will be downloaded.
 
 ---
 
-## 📝 2. Download Office Deployment Tool (ODT)
+## 📝 Step 2: Download Office Deployment Tool (ODT)
 
-Download the **Office Deployment Tool** from Microsoft's official site.
+1. Visit Microsoft’s official website.
+2. Download the **Office Deployment Tool**.
+3. Save the file on your computer.
 
 ---
 
-## 📝 3. Prepare Installation Folder
+## 📝 Step 3: Prepare Installation Folder
 
-1. Create a new folder:
+1. Create a new folder and name it:
 
 ```
 
@@ -50,48 +76,82 @@ Office_2021
 
 ```
 
-2. Move these files inside:
+2. Move the following files into this folder:
 - `configuration.xml`
 - `officedeploymenttool.exe`
 
-3. Run `officedeploymenttool.exe` as **Administrator**:
-- Accept → Continue
-- Choose the **Office_2021** folder
-- Files extract automatically
+3. Right-click **`officedeploymenttool.exe`**  
+   → Select **Run as Administrator**
+
+4. Accept the license agreement.
+5. Choose the **Office_2021** folder when prompted.  
+   The setup files will extract automatically.
 
 ---
 
-## 📝 4. Move Folder to Local Disk (C:)
+## 📝 Step 4: Move Folder to Local Disk (C:)
 
-Copy `Office_2021` → Paste inside:
+1. Copy the **Office_2021** folder.
+2. Paste it inside:
 
 ```
 
 C:\
 
+```
+
+✔ Final path:
+
+```
+
+C:\Office_2021
+
 ````
 
 ---
 
-## 📝 5. Install Office Using CMD
+## 📝 Step 5: Install Microsoft Office Using CMD
 
-Open **Command Prompt as Administrator** and run:
+1. Open **Command Prompt** as **Administrator**.
+2. Navigate to the Office folder:
 
 ```cmd
 cd C:\Office_2021
 ````
 
-Then install Office:
+3. Start the installation:
 
 ```cmd
 setup /configure configuration.xml
 ```
 
-Office installation will begin automatically ✔
+⏳ Installation will begin automatically.
+Please wait until the process completes.
 
 ---
 
-## 🎉 Done!
+## 🎉 Installation Completed Successfully!
 
-Your Office LTSC Professional Plus 2021 is now installed successfully.
+Microsoft Office LTSC Professional Plus 2021 is now installed on your system.
+
+You can now use:
+
+* Microsoft Word
+* Microsoft Excel
+* Microsoft PowerPoint
+* Microsoft Access
+
+---
+
+## 📌 Important Notes
+
+* Always run Command Prompt as **Administrator**
+* Do not close CMD during installation
+* Internet connection is required during setup
+
+---
+
+⭐ If this guide helped you, please consider giving this repository a **star**!
+
+```
 ```
